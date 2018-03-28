@@ -18,7 +18,7 @@ int partitionHoare(int A[], int low, int high){
             swap(A,i,j);
         }
         else{
-            return j+1;
+            return j;
         }
     }
 }
