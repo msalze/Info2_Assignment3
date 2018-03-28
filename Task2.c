@@ -11,8 +11,8 @@ int partitionHoare(int A[], int low, int high){
 	int i = low-1;
 	int j = high+1;
 	while (1) {
-        do  j--; while (A[j] >= x);
-        do  i++; while (A[i] <= x);
+        do  j--; while (A[j] > x && j>=low);
+        do  i++; while (A[i] < x && i<=high);
 
         if  (i < j){
             swap(A,i,j);
@@ -26,7 +26,7 @@ int partitionHoare(int A[], int low, int high){
 void quicksort(int A[], int low, int high){
 	if (low < high){
 		int m = partitionHoare(A,low,high);
-		quicksort(A,low,m);
+		quicksort(A,low,m-1);
 		quicksort(A,m+1,high);
 	}
 }
@@ -46,7 +46,6 @@ void printArray(int A[], int size){
 int main(){
 	int A[10]={4,3,2,5,6,7,8,9,12,1};
 	int n=10;
-	partitionHoare(A, 0,n-1);
 	printArray(A,n);
 	quicksort(A,0,n-1);
 	printArray(A,n);
