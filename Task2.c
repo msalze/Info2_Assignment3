@@ -11,8 +11,8 @@ int partitionHoare(int A[], int low, int high){
 	int i = low-1;
 	int j = high+1;
 	while (1) {
-        do  j--; while (A[j] > x);
-        do  i++; while (A[i] < x);
+        do  j--; while (A[j] >= x);
+        do  i++; while (A[i] <= x);
 
         if  (i < j){
             swap(A,i,j);
