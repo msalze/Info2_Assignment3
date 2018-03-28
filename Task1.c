@@ -67,8 +67,10 @@ void printArray(int A[], int n){
 }
 
 int main(){
-	int A[10]={3,1,17,8,9,1,7,11};
-	int n = 8;
+	int A[10]={3,8,9,1,7};
+	int n = 5;
+	buildMaxHeap(A,n);
+	printHeap(A,n);
 	heapSort(A,n);
 	printArray(A,n);
 	}
