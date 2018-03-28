@@ -9,29 +9,29 @@ struct list{
 	struct node* head;
 };
 
-void append(struct list * list A, int val){
+void append(struct list * listA, int val){
 	
 }
 
-void reverse(struct list * list A){
+void reverse(struct list * listA){
 	
 }
 
-void clear(struct list * list A){
+void clear(struct list * listA){
 	
 }
 
-void print(struct list * list A){
+void print(struct list * listA){
 	
 }
 
-void deleteAll(struct list * list A, int i){
+void deleteIndex(struct list * listA, int i){
 	
 }
-void deleteLast(struct list * list A){
+void deleteLast(struct list * listA){
 	
 }
 
-void max(struct list * list A){
+void max(struct list * listA){
 	
 }
